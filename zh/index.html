@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UUID 生成器 – 在线生成随机 UUID（v4）免费工具</title>
+  <meta name="description" content="免费在线 UUID 生成器，一键生成随机 UUID（v4）并快速复制。无需注册，在浏览器本地生成。">
+  <link rel="canonical" href="https://YOUR-DOMAIN/zh/">
+  <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/">
+  <link rel="alternate" hreflang="zh-CN" href="https://YOUR-DOMAIN/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="top">
+    <span class="logo">UUID 生成器</span>
+    <nav><a href="/">English</a> · <a href="/zh/" hreflang="zh-CN">中文</a></nav>
+  </header>
+
+  <main>
+    <h1>UUID 生成器</h1>
+    <p class="lead">一键生成随机 UUID（v4 版本）。免费、快速、无需注册。</p>
+
+    <div class="tool">
+      <input id="uuid-output" type="text" readonly aria-label="生成的 UUID">
+      <div class="buttons">
+        <button id="btn-generate" type="button">生成新的 UUID</button>
+        <button id="btn-copy" type="button" class="secondary">复制</button>
+      </div>
+      <p id="status" role="status"></p>
+    </div>
+
+    <section>
+      <h2>UUID 是什么？</h2>
+      <p>UUID（通用唯一识别码）是一串由 36 个字符组成的编号，例如 <code>123e4567-e89b-42d3-a456-426614174000</code>。开发者常用它给数据库记录、文件、用户、订单等“起名字”。它几乎不可能重复，所以不需要一个中央系统来统一分配编号。</p>
+    </section>
+
+    <section>
+      <h2>如何使用这个 UUID 生成器</h2>
+      <ol>
+        <li>打开页面时会自动生成一个 UUID。</li>
+        <li>点击<strong>“生成新的 UUID”</strong>可以换一个新的。</li>
+        <li>点击<strong>“复制”</strong>即可复制到剪贴板。</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>常见问题</h2>
+      <h3>这个 UUID 生成器免费吗？</h3>
+      <p>完全免费，不需要注册账号。</p>
+      <h3>生成的 UUID 会被发送到服务器吗？</h3>
+      <p>不会。所有 UUID 都在你自己的浏览器里生成，不会上传，也不会保存。</p>
+      <h3>UUID v4 是什么？</h3>
+      <p>v4 是最常见的 UUID 类型，由随机数生成，不包含时间或设备信息。</p>
+      <h3>两次生成的 UUID 会一样吗？</h3>
+      <p>实际使用中不会。v4 UUID 的可能数量极其庞大，重复的概率可以忽略不计。</p>
+    </section>
+  </main>
+
+  <footer>© UUID 生成器 · 在浏览器本地生成，不保存任何数据。</footer>
+  <script src="../script.js"></script>
+</body>
+</html>

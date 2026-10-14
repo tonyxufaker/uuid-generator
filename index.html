@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UUID Generator – Generate Random UUID v4 Online</title>
+  <meta name="description" content="Free online UUID generator. Create a random UUID (v4) with one click and copy it instantly. No sign-up, runs in your browser.">
+  <link rel="canonical" href="https://YOUR-DOMAIN/">
+  <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/">
+  <link rel="alternate" hreflang="zh-CN" href="https://YOUR-DOMAIN/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <span class="logo">UUID Generator</span>
+    <nav><a href="/">English</a> · <a href="/zh/" hreflang="zh-CN">中文</a></nav>
+  </header>
+
+  <main>
+    <h1>UUID Generator</h1>
+    <p class="lead">Generate a random UUID (version 4) with one click. Free, fast, and no sign-up.</p>
+
+    <div class="tool">
+      <input id="uuid-output" type="text" readonly aria-label="Generated UUID">
+      <div class="buttons">
+        <button id="btn-generate" type="button">Generate new UUID</button>
+        <button id="btn-copy" type="button" class="secondary">Copy</button>
+      </div>
+      <p id="status" role="status"></p>
+    </div>
+
+    <section>
+      <h2>What is a UUID?</h2>
+      <p>A UUID (Universally Unique Identifier) is a 128-bit label written as 36 characters, for example <code>123e4567-e89b-42d3-a456-426614174000</code>. Developers use UUIDs to give things like database records, files, users, or orders an ID that is extremely unlikely to ever repeat, without needing a central system to hand out numbers.</p>
+    </section>
+
+    <section>
+      <h2>How to use this UUID generator</h2>
+      <ol>
+        <li>A new UUID is created automatically when the page opens.</li>
+        <li>Click <strong>Generate new UUID</strong> to get another one.</li>
+        <li>Click <strong>Copy</strong> to copy it to your clipboard.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>FAQ</h2>
+      <h3>Is this UUID generator free?</h3>
+      <p>Yes. It is completely free and requires no account.</p>
+      <h3>Are my UUIDs sent to a server?</h3>
+      <p>No. Every UUID is generated inside your own browser. Nothing is uploaded or stored.</p>
+      <h3>What is a UUID v4?</h3>
+      <p>Version 4 is the most common type of UUID. It is built from random numbers, so it does not contain any information about time or your device.</p>
+      <h3>Can two generated UUIDs be the same?</h3>
+      <p>In practice, no. The number of possible v4 UUIDs is so large that a duplicate is astronomically unlikely.</p>
+    </section>
+  </main>
+
+  <footer>© UUID Generator · Generated in your browser, never stored.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
